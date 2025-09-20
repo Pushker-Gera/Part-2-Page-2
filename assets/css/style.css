@@ -11,8 +11,7 @@
 .nav-container {
     padding: 20px;
     background: linear-gradient(180deg, #000000 36.19%, rgba(0, 0, 0, 0) 100%);
-    min-width: 100%;
-    margin: -12px;
+    width: 100%;
     padding-top: 32px;
 }
 
@@ -70,6 +69,7 @@
     letter-spacing: 0%;
     color: rgba(255, 255, 255, 1);
     border: none;
+    cursor: pointer;
 }
 
 button {
@@ -162,7 +162,8 @@ button {
     font-size: 64px;
     line-height: 100%;
     letter-spacing: 0%;
-    color: rgba(59, 148, 94, 1)
+    color: rgba(59, 148, 94, 1);
+    text-shadow: 1px 1px 4px rgba(59, 148, 94, 1);
 }
 
 .para {
@@ -270,7 +271,7 @@ section {
         flex-wrap: nowrap;
         height: 26px;
         width: 30px;
-        background-color: black;
+        background-color: transparent;
         border: none;
         justify-content: space-between;
         margin-left: auto;
@@ -278,7 +279,7 @@ section {
         position: relative;
     }
 
-    span {
+    .menu-icon-span{
         background-color: aliceblue;
         height: 5px;
         width: auto;
@@ -306,9 +307,9 @@ section {
         flex-wrap: nowrap;
         align-items: center;
         justify-content: center;
-        background-color: #00000042;
+        background-color: #00000088;
         backdrop-filter: blur(10px);
-        gap: 46px;
+        gap: 20px;
         transition: right 200ms linear;
         z-index: 1;
     }
@@ -318,6 +319,7 @@ section {
         align-items: center;
         justify-content: center;
         margin-left: 0;
+        gap: 20px;
     }
 
     .icon-flex-box {
@@ -325,7 +327,7 @@ section {
     }
 
     .nav-links {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .navbar.show {
